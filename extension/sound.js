@@ -1,16 +1,13 @@
 var Document = $(document);
 
 Document.on('ready', function() {
-
   Document.on('click', '.soundimage', function (e) {
-
     e.preventDefault();
     e.stopPropagation();
     return false;
   });
 
   Document.on('mouseover', '.soundimage', function (e) {
-
     var target = $(e.target);
 
     if (target.data('busy')) return;
