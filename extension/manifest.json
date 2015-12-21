@@ -3,7 +3,7 @@
 
    "name": "The People’s Sound",
    "description": "An easy way to listen to pronunciations in the People’s Dictionary (Folkets lexikon).",
-   "version": "0.0.0.3",
+   "version": "0.0.0.4",
    "icons": { "128": "logo128.png" },
    "author": [{ "name": "Ivan Ukhov" }],
 
