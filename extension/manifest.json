@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
+	"manifest_version": 2,
 
-   "name": "The People’s Sound",
-   "description": "An easy way to listen to pronunciations in the People’s Dictionary (Folkets lexikon).",
-   "version": "0.0.0.4",
-   "icons": { "128": "logo128.png" },
-   "author": [{ "name": "Ivan Ukhov" }],
+	"name": "The People’s Sound",
+	"description": "An easy way to listen to pronunciations in the People’s Dictionary (Folkets lexikon).",
+	"version": "0.0.0.4",
+	"icons": { "128": "logo128.png" },
+	"author": [{ "name": "Ivan Ukhov" }],
 
-   "content_scripts": [{
-      "js": ["jquery.min.js", "sound.js"],
-      "matches": ["http://folkets-lexikon.csc.kth.se/**"],
-      "run_at": "document_start"
-   }]
+	"content_scripts": [{
+		"js": ["jquery.min.js", "sound.js"],
+		"matches": ["http://folkets-lexikon.csc.kth.se/**"],
+		"run_at": "document_start"
+	}]
 }
