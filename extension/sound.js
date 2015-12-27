@@ -4,6 +4,12 @@ $(document).on('ready', function() {
 			replace($(e));
 		});
 	});
+	$('body').on('mousedown', '.soundflash', function(e) {
+		$(e.target).trigger('click');
+		setTimeout(function() {
+			$('#folketsHuvud input.graytext').trigger('focus');
+		}, 0);
+	});
 });
 
 function replace(target) {
@@ -13,9 +19,7 @@ function replace(target) {
 	var link = target.parent('a');
 	if (link.length == 0) return;
 
-	var url = link.attr('href');
-
-	var play = $('<embed type="application/x-shockwave-flash" width="21px" height="21px" src="' + url + '" wmode="transparent"></embed>');
+	var play = $('<embed class="soundflash" type="application/x-shockwave-flash" width="21px" height="21px" src="' + link.attr('href') + '" wmode="transparent"></embed>');
 	play.css({ 'margin-bottom': '-4px' });
 
 	link.replaceWith(play);
