@@ -4,12 +4,6 @@ $(document).on('ready', function() {
 			replace($(e));
 		});
 	});
-	$('body').on('mousedown', '.soundflash', function(e) {
-		$(e.target).trigger('click');
-		setTimeout(function() {
-			$('#folketsHuvud input.graytext').trigger('focus');
-		}, 0);
-	});
 });
 
 function replace(target) {
